@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Clickerspill</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="container">
+            <section class="window" id="window--main">
+                <!-- <p class="heading">Clickerspill</p> -->
+                <p id="score"></p>
+                <div id="main-image-wrapper">
+                    <img src="media/lowrider.png" id="main-image" />
+                </div>
+            </section>
+
+            <section class="window" id="window--upgrades">
+                <p class="heading">Upgrades</p>
+                <div id="upgrades-container">
+                    <div class="upgrade" id="upgrade-1">
+                        <img src="media/upgrade-icons/suspension.png" class="upgrade-icon" />
+                        <div class="upgrade-info">
+                            <p class="upgrade-name">Score per click</p>
+                            <p>Lvl: <span class="upgrade-lvl" id="upgrade-1-lvl">0</span></p>
+                            <p>Cost: <span class="upgrade-cost" id="upgrade-1-cost">100</span></p>
+                        </div>
+                    </div>
+                    <div class="upgrade" id="upgrade-2">
+                        <img src="media/upgrade-icons/suspension.png" class="upgrade-icon" />
+                        <div class="upgrade-info">
+                            <p class="upgrade-name">Score per second</p>
+                            <p>Lvl: <span class="upgrade-lvl" id="upgrade-2-lvl">0</span></p>
+                            <p>Cost: <span class="upgrade-cost" id="upgrade-2-cost">100</span></p>
+                        </div>
+                    </div>
+                    <div class="upgrade" id="upgrade-car">
+                        <img src="media/upgrade-icons/suspension.png" class="upgrade-icon" />
+                        <div class="upgrade-info">
+                            <p class="upgrade-name">New car</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
