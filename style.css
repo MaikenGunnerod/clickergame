@@ -34,7 +34,7 @@ body {
 /* MAIN WINDOW */
 #window--main {
     /* background-color: #6ed1ec; */
-    background-image: url(media/sky.png);
+    background-image: url(media/workshop.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -51,7 +51,7 @@ body {
 }
 
 #score {
-    margin: 10rem 0 2.5rem;
+    margin: 10rem 0 7.5rem;
     text-align: center;
     font-size: 4rem;
     font-weight: 700;
@@ -118,4 +118,20 @@ body {
 
 .upgrade-name {
     font-weight: 700;
+}
+
+.upgrade-numbers {
+    display: flex;
+    gap: 20px;
+}
+
+.upgrade-numbers div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.coin-icon {
+    width: 20px;
 }
