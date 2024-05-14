@@ -1,137 +1,175 @@
+/************/
 /* DOCUMENT */
+/************/
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
+	font-size: 62.5%;
 }
 
 body {
-    font-family: sans-serif;
-    font-size: 1.6rem;
+	font-family: sans-serif;
+	font-size: 1.6rem;
 }
 
+/***********/
 /* GENERAL */
+/***********/
+
 #container {
-    display: grid;
-    grid-template-columns: 5fr 3fr;
+	display: grid;
+	grid-template-columns: 5fr 3fr;
 }
 
 .window {
-    padding: 5rem 0;
-    height: 100vh;
+	padding: 5rem 0;
+	height: 100vh;
 }
 
 .heading {
-    font-weight: 700;
-    font-size: 4rem;
-    text-align: center;
+	font-weight: 700;
+	font-size: 4rem;
+	text-align: center;
 }
 
+/***************/
 /* MAIN WINDOW */
+/***************/
+
 #window--main {
-    /* background-color: #6ed1ec; */
-    background-image: url(media/workshop.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+	background-image: url(media/workshop.png);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 #main-image-wrapper {
-    width: 30rem;
-    margin: 0 auto;
+	width: 30rem;
+	margin: 0 auto;
 }
 
 #main-image {
-    width: 100%;
-    cursor: pointer;
-    transform: rotateY(180deg);
+	width: 100%;
+	cursor: pointer;
+	transform: rotateY(180deg);
 }
 
-#score {
-    margin: 10rem 0 7.5rem;
-    text-align: center;
-    font-size: 4rem;
-    font-weight: 700;
+#score-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	margin: 10rem 0 7.5rem;
+	text-align: center;
+	font-size: 6rem;
+	font-weight: 700;
 }
 
+/******************/
 /* UPGRADE WINDOW */
+/******************/
+
 #window--upgrades {
-    background-blend-mode: multiply;
-    background-color: #333;
-    background-image: url(media/metal-texture.jpg);
-    background-repeat: repeat;
-    color: #fff;
+	background-blend-mode: multiply;
+	background-color: #333;
+	background-image: url(media/metal-texture.jpg);
+	background-repeat: repeat;
+	color: #fff;
 }
 
 #window--upgrades .heading {
-    margin-bottom: 5rem;
-    text-transform: uppercase;
+	margin-bottom: 5rem;
+	text-transform: uppercase;
 }
 
 #upgrades-container {
-    /* display: flex;
-    flex-direction: column; */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2.5rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto 10rem 10rem 10rem;
+	gap: 2.5rem;
 
-    padding: 0 2.5rem;
-}
-
-#upgrade-car {
-    grid-column: 1 / 3;
+	padding: 0 2.5rem;
 }
 
 .upgrade {
-    display: flex;
-    gap: 2rem;
+	display: flex;
+	gap: 2rem;
+	justify-content: center;
+	align-items: center;
 
-    width: 100%;
-    padding: 2rem;
+	width: 100%;
+	padding: 2rem;
 
-    background-color: #333;
-    box-shadow: 0 0 15px #000;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
+	background-color: #333;
+	box-shadow: 0 0 15px #000;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
 }
 
 .upgrade:hover {
-    background-color: #282828;
+	background-color: #282828;
 }
 
 .upgrade-icon {
-    width: 5rem;
-    height: 5rem;
-    filter: invert();
+	width: 5rem;
+	height: 5rem;
+	filter: invert();
 }
 
 .upgrade-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1rem;
 }
 
 .upgrade-name {
-    font-weight: 700;
+	font-weight: 700;
 }
 
 .upgrade-numbers {
-    display: flex;
-    gap: 20px;
+	display: flex;
+	gap: 20px;
 }
 
 .upgrade-numbers div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
 }
 
 .coin-icon {
-    width: 20px;
+	width: 2rem;
+}
+
+.upgrade-car {
+	grid-column: 1 / 3;
+	display: flex;
+	gap: 5rem;
+}
+
+.upgrade-car div {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.upgrade-car div img {
+	width: 3.5rem;
+	height: 3.5rem;
+}
+
+.car-price {
+	font-size: 2rem;
+}
+
+.new-car-icon {
+	width: 15rem;
+	height: fit-content;
 }
