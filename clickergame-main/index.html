@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="UTF-8" />
+        <title>Clickerspill</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="container">
+            <section class="window" id="window--main">
+                <div id="score-wrapper">
+                    <img src="media/upgrade-icons/coin.png" alt="Coin icon" width="70rem" />
+                    <p id="score"></p>
+                </div>
+                <div id="main-image-wrapper">
+                    <img src="media/cars/lowrider-1.png" alt="Lowrider car" id="main-image" />
+                </div>
+            </section>
+
+            <section class="window" id="window--upgrades">
+                <p class="heading">Upgrades</p>
+                <div id="upgrades-container">
+                    <div class="upgrade" id="upgrade-1">
+                        <img src="media/upgrade-icons/suspension.png" alt="Upgrade icon" class="upgrade-icon" />
+                        <div class="upgrade-info">
+                            <p class="upgrade-name">Hydraulics</p>
+                            <div class="upgrade-numbers">
+                                <div>
+                                    <img src="media/upgrade-icons/level-up.png" alt="Level up icon" class="coin-icon" />
+                                    <span class="upgrade-lvl" id="upgrade-1-lvl">0</span>
+                                </div>
+                                <div>
+                                    <img src="media/upgrade-icons/coin.png" alt="Coin icon" class="coin-icon" />
+                                    <span class="upgrade-cost" id="upgrade-1-cost">100</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upgrade" id="upgrade-2">
+                        <img src="media/upgrade-icons/mechanic.png" alt="Upgrade icon" class="upgrade-icon" />
+                        <div class="upgrade-info">
+                            <p class="upgrade-name">Mechanic</p>
+                            <div class="upgrade-numbers">
+                                <div>
+                                    <img src="media/upgrade-icons/level-up.png" alt="Level up icon" class="coin-icon" />
+                                    <span class="upgrade-lvl" id="upgrade-2-lvl">0</span>
+                                </div>
+                                <div>
+                                    <img src="media/upgrade-icons/coin.png" alt="Coin icon" class="coin-icon" />
+                                    <span class="upgrade-cost" id="upgrade-2-cost">100</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upgrade upgrade-car" id="upgrade-car-1">
+                        <img src="media/upgrade-icons/lowrider-2-icon.png" alt="Upgrade icon" class="new-car-icon" />
+                        <div class="upgrade-info">
+                            <img src="media/upgrade-icons/coin.png" alt="Coin icon" class="coin-icon" />
+                            <p class="car-price" id="car-cost-1"></p>
+                        </div>
+                    </div>
+                    <div class="upgrade upgrade-car" id="upgrade-car-2">
+                        <img src="media/upgrade-icons/lowrider-3-icon.png" alt="Upgrade icon" class="new-car-icon" />
+                        <div class="upgrade-info">
+                            <img src="media/upgrade-icons/coin.png" alt="Coin icon" class="coin-icon" />
+                            <p class="car-price" id="car-cost-2"></p>
+                        </div>
+                    </div>
+                    <!-- <div class="upgrade upgrade-car" id="upgrade-car-3">
+						<img
+							src="media/upgrade-icons/lowrider-4-icon.png"
+							alt="Upgrade icon"
+							class="new-car-icon"
+						/>
+						<div class="upgrade-info">
+							<img
+								src="media/upgrade-icons/coin.png"
+								alt="Coin icon"
+								class="coin-icon"
+							/>
+							<p class="car-price" id="car-cost-3"></p>
+						</div>
+					</div> -->
+                </div>
+            </section>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

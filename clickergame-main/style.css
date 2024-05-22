@@ -1,0 +1,180 @@
+/************/
+/* DOCUMENT */
+/************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1.6rem;
+}
+
+/***********/
+/* GENERAL */
+/***********/
+
+#container {
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+}
+
+.window {
+    padding: 5rem 0;
+    height: 100vh;
+}
+
+.heading {
+    font-weight: 700;
+    font-size: 4rem;
+    text-align: center;
+}
+
+/***************/
+/* MAIN WINDOW */
+/***************/
+
+#window--main {
+    background-image: url(media/workshop-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#main-image-wrapper {
+    width: 30rem;
+    margin: 0 auto;
+}
+
+#main-image {
+    width: 100%;
+    /* cursor: pointer; */
+    cursor: url("media/wrench-2.png"), auto;
+}
+
+#main-image:active {
+    transform: scale(1.05);
+}
+
+#score-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 10rem 0 7.5rem;
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+/******************/
+/* UPGRADE WINDOW */
+/******************/
+
+#window--upgrades {
+    background-blend-mode: multiply;
+    background-color: #333;
+    background-image: url(media/metal-texture.jpg);
+    background-repeat: repeat;
+    color: #fff;
+}
+
+#window--upgrades .heading {
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+}
+
+#upgrades-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 10rem 10rem 10rem;
+    gap: 2.5rem;
+
+    padding: 0 2.5rem;
+}
+
+.upgrade {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    padding: 2rem;
+
+    background-color: #333;
+    box-shadow: 0 0 15px #000;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.upgrade:hover {
+    background-color: #282828;
+}
+
+.upgrade-icon {
+    width: 5rem;
+    height: 5rem;
+    filter: invert();
+}
+
+.upgrade-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.upgrade-name {
+    font-weight: 700;
+}
+
+.upgrade-numbers {
+    display: flex;
+    gap: 20px;
+}
+
+.upgrade-numbers div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.coin-icon {
+    width: 2rem;
+}
+
+.upgrade-car {
+    grid-column: 1 / 3;
+    display: flex;
+    gap: 5rem;
+}
+
+.upgrade-car div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.upgrade-car div img {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.car-price {
+    font-size: 2rem;
+}
+
+.new-car-icon {
+    width: 15rem;
+    height: fit-content;
+}
